@@ -6,30 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD52CF0CEE300689EBC /* Assets.xcassets */; };
+		D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */; };
+		D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */; };
+		D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */; };
+		D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CDA2CF0CEE300689EBC /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-SOPKATHON-Team3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0F41CD52CF0CEE300689EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0F41CD62CF0CEE300689EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F41CD72CF0CEE300689EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0F41CDA2CF0CEE300689EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D0F41CCE2CF0CE5600689EBC /* Exceptions for "35th-SOPKATHON-Team3-iOS" folder in "35th-SOPKATHON-Team3-iOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D0F41CBB2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D0F41CBE2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D0F41CCE2CF0CE5600689EBC /* Exceptions for "35th-SOPKATHON-Team3-iOS" folder in "35th-SOPKATHON-Team3-iOS" target */,
-			);
-			path = "35th-SOPKATHON-Team3-iOS";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0F41CB92CF0CE5400689EBC /* Frameworks */ = {
@@ -45,7 +38,7 @@
 		D0F41CB32CF0CE5400689EBC = {
 			isa = PBXGroup;
 			children = (
-				D0F41CBE2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS */,
+				D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */,
 				D0F41CBD2CF0CE5400689EBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +49,51 @@
 				D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41CE22CF0D0A100689EBC /* Application */,
+				D0F41CE32CF0D0B100689EBC /* Global */,
+				D0F41CE42CF0D0D300689EBC /* Network */,
+				D0F41CE52CF0D0E000689EBC /* Presentation */,
+				D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */,
+				D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */,
+				D0F41CD52CF0CEE300689EBC /* Assets.xcassets */,
+				D0F41CD62CF0CEE300689EBC /* Info.plist */,
+				D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */,
+				D0F41CDA2CF0CEE300689EBC /* ViewController.swift */,
+			);
+			path = "35th-SOPKATHON-Team3-iOS";
+			sourceTree = "<group>";
+		};
+		D0F41CE22CF0D0A100689EBC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D0F41CE32CF0D0B100689EBC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D0F41CE42CF0D0D300689EBC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D0F41CE52CF0D0E000689EBC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +110,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D0F41CBE2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS */,
 			);
 			name = "35th-SOPKATHON-Team3-iOS";
 			packageProductDependencies = (
@@ -122,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */,
+				D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +169,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */,
+				D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */,
+				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F41CD72CF0CEE300689EBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D0F41CD02CF0CE5600689EBC /* Debug */ = {
@@ -150,9 +201,9 @@
 				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -178,9 +229,9 @@
 				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
