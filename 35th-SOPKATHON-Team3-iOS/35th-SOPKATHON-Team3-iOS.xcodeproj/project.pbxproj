@@ -12,6 +12,11 @@
 		D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */; };
 		D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */; };
 		D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CDA2CF0CEE300689EBC /* ViewController.swift */; };
+		D0F41CEE2CF0D3DE00689EBC /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CED2CF0D3DE00689EBC /* NSObject+.swift */; };
+		D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CEF2CF0D3FF00689EBC /* UIView+.swift */; };
+		D0F41CF22CF0D42200689EBC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CF12CF0D42200689EBC /* UIStackView+.swift */; };
+		D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CF42CF0D43800689EBC /* UITextField+.swift */; };
+		D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CF32CF0D43800689EBC /* UILabel+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D0F41CD72CF0CEE300689EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D0F41CDA2CF0CEE300689EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0F41CED2CF0D3DE00689EBC /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		D0F41CEF2CF0D3FF00689EBC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		D0F41CF12CF0D42200689EBC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		D0F41CF32CF0D43800689EBC /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		D0F41CF42CF0D43800689EBC /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,11 @@
 		D0F41CEB2CF0D2CE00689EBC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41CEF2CF0D3FF00689EBC /* UIView+.swift */,
+				D0F41CF12CF0D42200689EBC /* UIStackView+.swift */,
+				D0F41CF32CF0D43800689EBC /* UILabel+.swift */,
+				D0F41CF42CF0D43800689EBC /* UITextField+.swift */,
+				D0F41CED2CF0D3DE00689EBC /* NSObject+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,8 +241,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */,
+				D0F41CF22CF0D42200689EBC /* UIStackView+.swift in Sources */,
+				D0F41CEE2CF0D3DE00689EBC /* NSObject+.swift in Sources */,
 				D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */,
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
+				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
+				D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */,
+				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
