@@ -58,12 +58,6 @@
 				D0F41CE32CF0D0B100689EBC /* Global */,
 				D0F41CE42CF0D0D300689EBC /* Network */,
 				D0F41CE52CF0D0E000689EBC /* Presentation */,
-				D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */,
-				D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */,
-				D0F41CD52CF0CEE300689EBC /* Assets.xcassets */,
-				D0F41CD62CF0CEE300689EBC /* Info.plist */,
-				D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */,
-				D0F41CDA2CF0CEE300689EBC /* ViewController.swift */,
 			);
 			path = "35th-SOPKATHON-Team3-iOS";
 			sourceTree = "<group>";
@@ -71,6 +65,8 @@
 		D0F41CE22CF0D0A100689EBC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */,
+				D0F41CD92CF0CEE300689EBC /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -78,6 +74,12 @@
 		D0F41CE32CF0D0B100689EBC /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41CEB2CF0D2CE00689EBC /* Extensions */,
+				D0F41CEA2CF0D2C600689EBC /* Components */,
+				D0F41CE92CF0D2BF00689EBC /* Literals */,
+				D0F41CE82CF0D2B700689EBC /* Protocols */,
+				D0F41CE72CF0D2AF00689EBC /* Resources */,
+				D0F41CE62CF0D29D00689EBC /* Supporting Files */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -92,8 +94,62 @@
 		D0F41CE52CF0D0E000689EBC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41CDA2CF0CEE300689EBC /* ViewController.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D0F41CE62CF0D29D00689EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41CD62CF0CEE300689EBC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F41CE72CF0D2AF00689EBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41CEC2CF0D2E800689EBC /* Fonts */,
+				D0F41CD52CF0CEE300689EBC /* Assets.xcassets */,
+				D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0F41CE82CF0D2B700689EBC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D0F41CE92CF0D2BF00689EBC /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		D0F41CEA2CF0D2C600689EBC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0F41CEB2CF0D2CE00689EBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0F41CEC2CF0D2E800689EBC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +254,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Info.plist";
+				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Global/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -226,7 +282,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Info.plist";
+				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Global/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
