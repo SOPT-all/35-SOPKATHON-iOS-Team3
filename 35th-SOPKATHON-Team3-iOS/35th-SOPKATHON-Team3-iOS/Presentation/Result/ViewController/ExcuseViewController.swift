@@ -20,6 +20,11 @@ class ExcuseViewController: UIViewController {
         $0.backgroundColor = .primary500
     }
     
+    private let imageBackgroundView = UIView().then {
+        $0.backgroundColor = .gray0
+        $0.layer.cornerRadius = 10
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setStyle()
@@ -32,7 +37,7 @@ class ExcuseViewController: UIViewController {
     }
     
     private func setUI() {
-        self.view.addSubviews(keepGoingButton)
+        self.view.addSubviews(keepGoingButton, imageBackgroundView)
     }
     
     private func setLayout() {
@@ -42,6 +47,13 @@ class ExcuseViewController: UIViewController {
             $0.leading.equalTo(31)
             $0.width.equalTo(314)
             $0.height.equalTo(56)
+        }
+        
+        imageBackgroundView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().offset(150)
+            $0.width.equalTo(321)
+            $0.height.equalTo(462)
         }
     }
         
