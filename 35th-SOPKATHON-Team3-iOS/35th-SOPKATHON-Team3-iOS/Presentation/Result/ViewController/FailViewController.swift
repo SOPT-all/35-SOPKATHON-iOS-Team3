@@ -24,12 +24,11 @@ class FailViewController: UIViewController {
     }
     
     private func setUI() {
-        
+
     }
     
     private func setLayout() {
         
     }
-        
+    
 }
-
