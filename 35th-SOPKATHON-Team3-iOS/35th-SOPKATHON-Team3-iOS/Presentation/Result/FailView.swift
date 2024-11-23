@@ -40,7 +40,10 @@ final class FailView: UIView {
     }
     
     private func setUI() {
-        self.addSubviews(excuseButton, keepGoingButton)
+        self.addSubviews(
+            excuseButton,
+            keepGoingButton
+        )
     }
     
     private func setLayout() {
@@ -58,7 +61,6 @@ final class FailView: UIView {
             $0.height.equalTo(58)
             $0.width.equalTo(314)
         }
-        
     }
     
 }

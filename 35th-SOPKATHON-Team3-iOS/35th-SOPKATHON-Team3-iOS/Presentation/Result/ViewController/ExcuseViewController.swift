@@ -48,7 +48,12 @@ class ExcuseViewController: UIViewController {
     }
     
     private func setUI() {
-        self.view.addSubviews(keepGoingButton, imageBackgroundView, excuseImageView, anotherExcuseButton)
+        self.view.addSubviews(
+            keepGoingButton,
+            imageBackgroundView,
+            excuseImageView,
+            anotherExcuseButton
+        )
     }
     
     private func setLayout() {
@@ -80,7 +85,7 @@ class ExcuseViewController: UIViewController {
             $0.leading.equalToSuperview().offset(143.5)
         }
     }
-        
+    
 }
 
 #Preview {

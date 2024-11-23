@@ -45,7 +45,10 @@ final class SuccessView: UIView {
     }
     
     private func setUI() {
-        self.addSubviews(excuseButton, keepGoingButton)
+        self.addSubviews(
+            excuseButton,
+            keepGoingButton
+        )
     }
     
     private func setLayout() {
