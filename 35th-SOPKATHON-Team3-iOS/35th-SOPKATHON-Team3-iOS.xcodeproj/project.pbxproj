@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C29C3D62CF2118F003346A3 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C3D52CF2118F003346A3 /* SuccessView.swift */; };
+		5C29C45C2CF2130E003346A3 /* FailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C45B2CF2130E003346A3 /* FailView.swift */; };
+		5C29C4602CF2137F003346A3 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C45F2CF2137F003346A3 /* SuccessViewController.swift */; };
+		5C29C4622CF21420003346A3 /* FailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C4612CF21420003346A3 /* FailViewController.swift */; };
+		5C29C4642CF21455003346A3 /* ExcuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C4632CF21455003346A3 /* ExcuseViewController.swift */; };
+		5C29C4662CF23427003346A3 /* ExcuseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C4652CF23427003346A3 /* ExcuseImageViewController.swift */; };
 		D0C5806C2CF1DEAC005FF1C7 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C5806B2CF1DEAC005FF1C7 /* Pretendard-Thin.otf */; };
 		D0C5806D2CF1DEAC005FF1C7 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580682CF1DEAC005FF1C7 /* Pretendard-Medium.otf */; };
 		D0C5806E2CF1DEAC005FF1C7 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */; };
@@ -21,7 +27,6 @@
 		D0C580AE2CF20BE1005FF1C7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580AD2CF20BDA005FF1C7 /* OnboardingViewController.swift */; };
 		D0C580B12CF20BFB005FF1C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */; };
 		D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */; };
-		D0C580B52CF20C0B005FF1C7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */; };
 		D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD52CF0CEE300689EBC /* Assets.xcassets */; };
 		D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */; };
 		D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */; };
@@ -46,6 +51,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C29C3D52CF2118F003346A3 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		5C29C45B2CF2130E003346A3 /* FailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailView.swift; sourceTree = "<group>"; };
+		5C29C45F2CF2137F003346A3 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		5C29C4612CF21420003346A3 /* FailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailViewController.swift; sourceTree = "<group>"; };
+		5C29C4632CF21455003346A3 /* ExcuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcuseViewController.swift; sourceTree = "<group>"; };
+		5C29C4652CF23427003346A3 /* ExcuseImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcuseImageViewController.swift; sourceTree = "<group>"; };
 		D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		D0C580642CF1DEAC005FF1C7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		D0C580652CF1DEAC005FF1C7 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -60,8 +71,6 @@
 		D0C580AD2CF20BDA005FF1C7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-SOPKATHON-Team3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F41CD52CF0CEE300689EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F41CD62CF0CEE300689EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +106,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C29C45D2CF2132B003346A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C29C45E2CF2133F003346A3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C29C45F2CF2137F003346A3 /* SuccessViewController.swift */,
+				5C29C4612CF21420003346A3 /* FailViewController.swift */,
+				5C29C4632CF21455003346A3 /* ExcuseViewController.swift */,
+				5C29C4652CF23427003346A3 /* ExcuseImageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		D0C580A52CF20B75005FF1C7 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +135,10 @@
 		D0C580A62CF20B7E005FF1C7 /* Result */ = {
 			isa = PBXGroup;
 			children = (
-				D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */,
+				5C29C45E2CF2133F003346A3 /* ViewController */,
+				5C29C45D2CF2132B003346A3 /* View */,
+				5C29C3D52CF2118F003346A3 /* SuccessView.swift */,
+				5C29C45B2CF2130E003346A3 /* FailView.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -142,16 +172,7 @@
 			children = (
 				D0F41D122CF108FB00689EBC /* Config.xcconfig */,
 				D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */,
-				D0F41CBD2CF0CE5400689EBC /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		D0F41CBD2CF0CE5400689EBC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */ = {
@@ -312,7 +333,6 @@
 				D0F41D342CF10D8F00689EBC /* Moya */,
 			);
 			productName = "35th-SOPKATHON-Team3-iOS";
-			productReference = D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +367,7 @@
 				D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D0F41CBD2CF0CE5400689EBC /* Products */;
+			productRefGroup = D0F41CB32CF0CE5400689EBC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -384,23 +404,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C5807B2CF1DF26005FF1C7 /* FontLiterals.swift in Sources */,
-				D0C580B52CF20C0B005FF1C7 /* ResultViewController.swift in Sources */,
+				5C29C4662CF23427003346A3 /* ExcuseImageViewController.swift in Sources */,
+				5C29C4602CF2137F003346A3 /* SuccessViewController.swift in Sources */,
 				D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */,
 				D0F41CF22CF0D42200689EBC /* UIStackView+.swift in Sources */,
+				5C29C45C2CF2130E003346A3 /* FailView.swift in Sources */,
 				D0F41CEE2CF0D3DE00689EBC /* NSObject+.swift in Sources */,
 				D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */,
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
 				D0C580B12CF20BFB005FF1C7 /* MainViewController.swift in Sources */,
+				5C29C4622CF21420003346A3 /* FailViewController.swift in Sources */,
 				D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */,
 				D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */,
 				D0C580AC2CF20BD7005FF1C7 /* SplashViewController.swift in Sources */,
+				5C29C3D62CF2118F003346A3 /* SuccessView.swift in Sources */,
 				D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */,
 				D0C580AE2CF20BE1005FF1C7 /* OnboardingViewController.swift in Sources */,
 				D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */,
 				D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */,
 				D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */,
 				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
+				5C29C4642CF21455003346A3 /* ExcuseViewController.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
