@@ -20,8 +20,19 @@ class ExcuseViewController: UIViewController {
         $0.backgroundColor = .primary500
     }
     
+    private let anotherExcuseButton = UIButton().then {
+        $0.titleLabel?.font = .head(.h6Semibold)
+        $0.setTitle("다른 핑계 보기", for: .normal)
+        $0.setTitleColor(.primary500, for: .normal)
+    }
+    
     private let imageBackgroundView = UIView().then {
         $0.backgroundColor = .gray0
+        $0.layer.cornerRadius = 10
+    }
+    
+    private let excuseImageView = UIImageView().then {
+        $0.backgroundColor = .gray30
         $0.layer.cornerRadius = 10
     }
     
@@ -37,7 +48,7 @@ class ExcuseViewController: UIViewController {
     }
     
     private func setUI() {
-        self.view.addSubviews(keepGoingButton, imageBackgroundView)
+        self.view.addSubviews(keepGoingButton, imageBackgroundView, excuseImageView, anotherExcuseButton)
     }
     
     private func setLayout() {
@@ -54,6 +65,19 @@ class ExcuseViewController: UIViewController {
             $0.top.equalToSuperview().offset(150)
             $0.width.equalTo(321)
             $0.height.equalTo(462)
+        }
+        
+        excuseImageView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(imageBackgroundView.snp.top).offset(28.14)
+            $0.width.equalTo(276.59)
+            $0.height.equalTo(386.63)
+        }
+        
+        anotherExcuseButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().offset(112)
+            $0.leading.equalToSuperview().offset(143.5)
         }
     }
         
