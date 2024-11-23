@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADF742182CF2134F007388D8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF742172CF2134F007388D8 /* QuizView.swift */; };
+		ADF7421A2CF23C99007388D8 /* QuizWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF742192CF23C99007388D8 /* QuizWord.swift */; };
 		D0C5806C2CF1DEAC005FF1C7 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C5806B2CF1DEAC005FF1C7 /* Pretendard-Thin.otf */; };
 		D0C5806D2CF1DEAC005FF1C7 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580682CF1DEAC005FF1C7 /* Pretendard-Medium.otf */; };
 		D0C5806E2CF1DEAC005FF1C7 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */; };
@@ -46,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADF742172CF2134F007388D8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		ADF742192CF23C99007388D8 /* QuizWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWord.swift; sourceTree = "<group>"; };
 		D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		D0C580642CF1DEAC005FF1C7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		D0C580652CF1DEAC005FF1C7 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -97,9 +101,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADF742162CF21265007388D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADF742172CF2134F007388D8 /* QuizView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADF7421B2CF25AA4007388D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADF742192CF23C99007388D8 /* QuizWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D0C580A52CF20B75005FF1C7 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				ADF7421B2CF25AA4007388D8 /* Model */,
+				ADF742162CF21265007388D8 /* View */,
 				D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */,
 			);
 			path = Quiz;
@@ -388,6 +410,7 @@
 				D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */,
 				D0F41CF22CF0D42200689EBC /* UIStackView+.swift in Sources */,
 				D0F41CEE2CF0D3DE00689EBC /* NSObject+.swift in Sources */,
+				ADF7421A2CF23C99007388D8 /* QuizWord.swift in Sources */,
 				D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */,
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
@@ -400,6 +423,7 @@
 				D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */,
 				D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */,
 				D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */,
+				ADF742182CF2134F007388D8 /* QuizView.swift in Sources */,
 				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
