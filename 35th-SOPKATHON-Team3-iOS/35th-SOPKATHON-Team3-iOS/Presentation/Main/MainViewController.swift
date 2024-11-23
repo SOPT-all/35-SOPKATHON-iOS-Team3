@@ -22,10 +22,23 @@ class MainViewController: UIViewController {
     }
     var capacityCups: Int = 8
     
+    var isOverDrinking: Bool = false {
+        didSet {
+            print("isoverdrinking set")
+            
+        }
+        
+    }
+    
     private let guideLabel = UILabel().then {
-        $0.text = "한 잔 마실 때마다 눌러주세요!"
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 20)
-        $0.textColor = .gray100
+        $0.font = .head(.h4Semibold)
+        $0.numberOfLines = 2
+        $0.text = """
+한 잔, 두 잔...
+지금 몇 잔 째인가요?
+"""
+        $0.textAlignment = .center
+        $0.textColor = .gray70
     }
     
     private let drinkingLabelStackView = UIStackView().then {
@@ -34,33 +47,33 @@ class MainViewController: UIViewController {
     }
     
     private lazy var drinkCupsLabel = UILabel().then {
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 30)
+        $0.font = .head(.h3Semibold)
         $0.text = String(drinkCups)
         $0.textColor = .gray100
     }
     
     private let cupLabel1 = UILabel().then {
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
+        $0.font = .head(.h6Semibold)
         $0.text = "잔"
         $0.textColor = .gray100
     }
     
     private let slashLabel = UILabel().then {
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 30)
+        $0.font = .head(.h3Semibold)
         $0.text = "/"
-        $0.textColor = .gray100
+        $0.textColor = .gray30
     }
     private lazy var capacityCupsLabel = UILabel().then {
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 30)
+        $0.font = .head(.h3Semibold)
         $0.text = String(capacityCups)
-        $0.textColor = .gray100
+        $0.textColor = .gray30
         
     }
     
     private let cupLabel2 = UILabel().then {
-        $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
+        $0.font = .head(.h6Semibold)
         $0.text = "잔"
-        $0.textColor = .gray100
+        $0.textColor = .gray30
     }
     
     private let tapButton = UIButton().then {
@@ -83,6 +96,7 @@ class MainViewController: UIViewController {
         $0.distribution = .equalSpacing
         $0.spacing = 12
     }
+    
     
     // MARK: - Methods
     
@@ -182,17 +196,17 @@ class MainViewController: UIViewController {
         let warningVC = WarningViewController()
         let capacityRest = capacityCups % 8
         
-        warningVC.modalPresentationStyle = .overFullScreen
-        warningVC.modalTransitionStyle = .flipHorizontal
-        
         drinkCups += 1
         updateBottle()
         
+        warningVC.modalPresentationStyle = .overFullScreen
+        warningVC.modalTransitionStyle = .flipHorizontal
+        
         if drinkCups == capacityCups {
             self.present(warningVC, animated: true)
-            
-        } else if drinkCups > capacityCups && drinkCups % 8 == capacityRest {
+            isOverDrinking = true
             drinkCupsLabel.textColor = .red
+        } else if isOverDrinking && drinkCups % 8 == capacityRest {
             self.present(warningVC, animated: true)
         }
     }
