@@ -13,20 +13,31 @@ import Then
 final class SuccessView: UIView {
     
     private let excuseButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h3SemiBold)
-        $0.setTitle("귀가 핑계대기", for: .normal)
+        $0.titleLabel?.font = .body(.b4SemiBold)
+        $0.setTitle("집 갈 핑계 만들기", for: .normal)
         $0.setTitleColor(.primary500, for: .normal)
-        $0.layer.cornerRadius = 29
+        $0.layer.cornerRadius = 10
         $0.backgroundColor = .primary200
     }
     
     private let keepGoingButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h3SemiBold)
-        $0.setTitle("그냥 마시기", for: .normal)
-        $0.setTitleColor(.gray100, for: .normal)
-        $0.layer.cornerRadius = 29
-        $0.layer.borderColor = UIColor.gray100.cgColor
-        $0.layer.borderWidth = 1
+        $0.titleLabel?.font = .body(.b4SemiBold)
+        $0.setTitle("그래도 마셔볼래...", for: .normal)
+        $0.setTitleColor(.gray70, for: .normal)
+        $0.layer.cornerRadius = 10
+        $0.backgroundColor = .gray10
+    }
+    
+    private let successLabel = UILabel().then {
+        $0.text = "성공했지만 주량 초과..."
+        $0.textColor = .gray100
+        $0.font = .head(.h4Bold)
+    }
+    
+    private let successSubLabel = UILabel().then {
+        $0.text = "오늘은 여기까지가 좋을 것 같아요!"
+        $0.textColor = .gray100
+        $0.font = .head(.h4Bold)
     }
     
     override init(frame: CGRect) {
@@ -47,7 +58,9 @@ final class SuccessView: UIView {
     private func setUI() {
         self.addSubviews(
             excuseButton,
-            keepGoingButton
+            keepGoingButton,
+            successLabel,
+            successSubLabel
         )
     }
     
@@ -65,12 +78,17 @@ final class SuccessView: UIView {
             $0.height.equalTo(58)
             $0.width.equalTo(314)
         }
+        
+        successLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().offset(120)
+        }
+        
+        successSubLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(successLabel.snp.bottom).offset(12)
+        }
+        
     }
     
 }
-
-//#Preview
-//{
-//    let view = SuccessView()
-//    view
-//}

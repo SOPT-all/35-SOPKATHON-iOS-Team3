@@ -13,20 +13,19 @@ import Then
 final class FailView: UIView {
     
     private let excuseButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h5SemiBold)
-        $0.setTitle("귀가 핑계대기", for: .normal)
+        $0.titleLabel?.font = .body(.b4SemiBold)
+        $0.setTitle("집 갈 핑계 만들기", for: .normal)
         $0.setTitleColor(.primary500, for: .normal)
-        $0.layer.cornerRadius = 29
+        $0.layer.cornerRadius = 10
         $0.backgroundColor = .primary200
     }
     
     private let keepGoingButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h5SemiBold)
-        $0.setTitle("그냥 마시기", for: .normal)
-        $0.setTitleColor(.gray100, for: .normal)
-        $0.layer.cornerRadius = 29
-        $0.layer.borderColor = UIColor.gray100.cgColor
-        $0.layer.borderWidth = 1
+        $0.titleLabel?.font = .body(.b4SemiBold)
+        $0.setTitle("그래도 마셔볼래...", for: .normal)
+        $0.setTitleColor(.gray70, for: .normal)
+        $0.layer.cornerRadius = 10
+        $0.backgroundColor = .gray10
     }
     
     override init(frame: CGRect) {
@@ -64,9 +63,3 @@ final class FailView: UIView {
     }
     
 }
-//
-//#Preview
-//{
-//    let view = FailView()
-//    view
-//}
