@@ -11,41 +11,29 @@ enum FontWeight: String {
     case pretendardRegular = "Pretendard-Regular"
     case pretendardMedium = "Pretendard-Medium"
     case pretendardSemiBold = "Pretendard-SemiBold"
+    case pretendardBold = "Pretendard-Bold"
+    case pretendardExtraBold = "Pretendard-ExtraBold"
 }
 
 enum Heading {
-    case h1Semibold
-    case h2Semibold
-    case h3Semibold
-    case h4Semibold
-    case h5Semibold
-    case h6Semibold
-}
-
-enum Title {
-    case t1Semibold
-    case t2Semibold
-    case t3Semibold
-    case t4Semibold
+    case h1SemiBold
+    case h2ExtraBold
+    case h2SemiBold
+    case h3SemiBold
+    case h4Bold
+    case h5SemiBold
+    case h6SemiBold
 }
 
 enum Body {
-    case b1Medium
+    case b1SemiBold
     case b2Medium
-    case b3Medium
+    case b2Regular
+    case b3SemiBold
+    case b4SemiBold
     case b4Medium
     case b5Medium
-    case b1Regular
-    case b2Regular
-    case b3Regular
-    case b4Regular
     case b5Regular
-}
-
-enum Label {
-    case l1Semibold
-    case l2Semibold
-    case l3Semibold
 }
 
 extension UIFont {
@@ -57,44 +45,26 @@ extension UIFont {
     
     static func head(_ style: Heading) -> UIFont {
         switch style {
-        case .h1Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 40)
-        case .h2Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 32)
-        case .h3Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 28)
-        case .h4Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 24)
-        case .h5Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 20)
-        case .h6Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
-        }
-    }
-    
-    static func title(_ style: Title) -> UIFont {
-        switch style {
-        case .t1Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 28)
-        case .t2Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 24)
-        case .t3Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 20)
-        case .t4Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 18)
+        case .h1SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 56)
+        case .h2ExtraBold: return pretendardFont(weight: .pretendardExtraBold, ofSize: 40)
+        case .h2SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 40)
+        case .h3SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 28)
+        case .h4Bold: return pretendardFont(weight: .pretendardBold, ofSize: 24)
+        case .h5SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 20)
+        case .h6SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
         }
     }
     
     static func body(_ style: Body) -> UIFont {
         switch style {
-        case .b1Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 24)
+        case .b1SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 24)
         case .b2Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 20)
-        case .b3Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 16)
-        case .b4Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 14)
-        case .b5Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 12)
-        case .b1Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 24)
         case .b2Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 20)
-        case .b3Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 16)
-        case .b4Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 14)
-        case .b5Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 12)
-        }
-    }
-    
-    static func caption(_ style: Label) -> UIFont {
-        switch style {
-        case .l1Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
-        case .l2Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 14)
-        case .l3Semibold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 12)
+        case .b3SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 18)
+        case .b4SemiBold: return pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
+        case .b4Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 16)
+        case .b5Medium: return pretendardFont(weight: .pretendardMedium, ofSize: 14)
+        case .b5Regular: return pretendardFont(weight: .pretendardRegular, ofSize: 14)
         }
     }
     
