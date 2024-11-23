@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157F77B42CF238620024F1C6 /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F77B32CF238620024F1C6 /* WarningViewController.swift */; };
 		5C29C3D62CF2118F003346A3 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C3D52CF2118F003346A3 /* SuccessView.swift */; };
 		5C29C45C2CF2130E003346A3 /* FailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C45B2CF2130E003346A3 /* FailView.swift */; };
 		5C29C4602CF2137F003346A3 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29C45F2CF2137F003346A3 /* SuccessViewController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157F77B32CF238620024F1C6 /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
 		5C29C3D52CF2118F003346A3 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		5C29C45B2CF2130E003346A3 /* FailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailView.swift; sourceTree = "<group>"; };
 		5C29C45F2CF2137F003346A3 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */,
+				157F77B32CF238620024F1C6 /* WarningViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				5C29C4642CF21455003346A3 /* ExcuseViewController.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
+				157F77B42CF238620024F1C6 /* WarningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X395BM5WW7;
+				DEVELOPMENT_TEAM = FB44T8T3FL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Global/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,7 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X395BM5WW7;
+				DEVELOPMENT_TEAM = FB44T8T3FL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "35th-SOPKATHON-Team3-iOS/Global/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

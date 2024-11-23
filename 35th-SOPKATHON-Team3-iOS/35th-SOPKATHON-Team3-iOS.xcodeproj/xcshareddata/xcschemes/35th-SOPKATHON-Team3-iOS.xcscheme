@@ -42,7 +42,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         FilePath = "/Users/johyerin/Library/Developer/Xcode/DerivedData/35th-SOPKATHON-Team3-iOS-gcxwstmzlrijwefckfwbngnntfxb/Build/Products/Debug-iphonesimulator/35th-SOPKATHON-Team3-iOS.app">
+         FilePath = "/Users/kim-yurim/Library/Developer/Xcode/DerivedData/35th-SOPKATHON-Team3-iOS-eumapcmeakuykbhldstsgvqdxype/Build/Products/Release-iphonesimulator/35th-SOPKATHON-Team3-iOS.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
