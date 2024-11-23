@@ -22,6 +22,11 @@
 		D0F41D042CF0D60D00689EBC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D032CF0D60D00689EBC /* Then */; };
 		D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D062CF0D62400689EBC /* Alamofire */; };
 		D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0F41D122CF108FB00689EBC /* Config.xcconfig */; };
+		D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */; };
+		D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D182CF10BB300689EBC /* NetworkResult.swift */; };
+		D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D172CF10BB300689EBC /* NetworkService.swift */; };
+		D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D152CF10BB300689EBC /* BaseService.swift */; };
+		D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D142CF10BB300689EBC /* BaseTargetType.swift */; };
 		D0F41D352CF10D8F00689EBC /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D342CF10D8F00689EBC /* Moya */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		D0F41CF32CF0D43800689EBC /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		D0F41CF42CF0D43800689EBC /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		D0F41D122CF108FB00689EBC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D0F41D142CF10BB300689EBC /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		D0F41D152CF10BB300689EBC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
+		D0F41D172CF10BB300689EBC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D0F41D182CF10BB300689EBC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 		D0F41CE42CF0D0D300689EBC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41D1A2CF10BB300689EBC /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -178,6 +189,18 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D0F41D1A2CF10BB300689EBC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41D142CF10BB300689EBC /* BaseTargetType.swift */,
+				D0F41D152CF10BB300689EBC /* BaseService.swift */,
+				D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */,
+				D0F41D172CF10BB300689EBC /* NetworkService.swift */,
+				D0F41D182CF10BB300689EBC /* NetworkResult.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +296,11 @@
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
 				D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */,
+				D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */,
+				D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */,
+				D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */,
+				D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */,
+				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
