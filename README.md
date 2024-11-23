@@ -1,7 +1,8 @@
 # 35-SOPKATHON-iOS-Team3
-35기 AND SOPT 솝커톤 iOS 3팀 레포지토리 입니다!!
+35기 AND SOPT 솝커톤 iOS 3팀 아삼아삼~
 
-# Team iOS 3
+# 🍺 Team SoJu
+SoJu는 술자리에서 자신의 주량에 맞게 음주를 할 수 있도록 취기를 확인하며, 자연스럽게 자리에서 빠져나갈 핑계를 제공해 음주 후 다음날에도 현실적이고 계획적인 삶을 유지할 수 있도록 돕는 서비스입니다.
 
 <div align=center>
   
@@ -28,7 +29,6 @@
 8.  PR을 작성한 후, 리뷰나 수정사항을 반영해준 뒤 develop에 merge한다.
 
 # 🍺 Commit Message
----
 ``` 
 [Feat] : 새로운 기능 구현
 [Fix] : 버그, 오류 해결
@@ -39,7 +39,6 @@
 ```
 
 ## 🍺 Library
----
 
 | Plugin | README |
 | ------ | ------ |
