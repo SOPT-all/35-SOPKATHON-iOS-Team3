@@ -19,7 +19,6 @@ class MainViewController: UIViewController {
             drinkCupsLabel.text = String(drinkCups)
         }
     }
-    
     var capacityCups: Int = 8
     
     private let guideLabel = UILabel().then {
