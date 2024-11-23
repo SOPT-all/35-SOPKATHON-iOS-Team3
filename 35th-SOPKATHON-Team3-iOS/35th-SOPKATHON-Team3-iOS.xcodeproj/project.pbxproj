@@ -21,6 +21,13 @@
 		D0F41D012CF0D60200689EBC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D002CF0D60200689EBC /* SnapKit */; };
 		D0F41D042CF0D60D00689EBC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D032CF0D60D00689EBC /* Then */; };
 		D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D062CF0D62400689EBC /* Alamofire */; };
+		D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0F41D122CF108FB00689EBC /* Config.xcconfig */; };
+		D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */; };
+		D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D182CF10BB300689EBC /* NetworkResult.swift */; };
+		D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D172CF10BB300689EBC /* NetworkService.swift */; };
+		D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D152CF10BB300689EBC /* BaseService.swift */; };
+		D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41D142CF10BB300689EBC /* BaseTargetType.swift */; };
+		D0F41D352CF10D8F00689EBC /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D342CF10D8F00689EBC /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,12 @@
 		D0F41CF12CF0D42200689EBC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		D0F41CF32CF0D43800689EBC /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		D0F41CF42CF0D43800689EBC /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		D0F41D122CF108FB00689EBC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D0F41D142CF10BB300689EBC /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		D0F41D152CF10BB300689EBC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
+		D0F41D172CF10BB300689EBC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D0F41D182CF10BB300689EBC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +59,7 @@
 				D0F41CFE2CF0D5F100689EBC /* Kingfisher in Frameworks */,
 				D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */,
 				D0F41D042CF0D60D00689EBC /* Then in Frameworks */,
+				D0F41D352CF10D8F00689EBC /* Moya in Frameworks */,
 				D0F41D012CF0D60200689EBC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +70,7 @@
 		D0F41CB32CF0CE5400689EBC = {
 			isa = PBXGroup;
 			children = (
+				D0F41D122CF108FB00689EBC /* Config.xcconfig */,
 				D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */,
 				D0F41CBD2CF0CE5400689EBC /* Products */,
 			);
@@ -105,6 +120,7 @@
 		D0F41CE42CF0D0D300689EBC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D0F41D1A2CF10BB300689EBC /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -175,6 +191,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D0F41D1A2CF10BB300689EBC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41D142CF10BB300689EBC /* BaseTargetType.swift */,
+				D0F41D152CF10BB300689EBC /* BaseService.swift */,
+				D0F41D162CF10BB300689EBC /* MoyaPlugin.swift */,
+				D0F41D172CF10BB300689EBC /* NetworkService.swift */,
+				D0F41D182CF10BB300689EBC /* NetworkResult.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +224,7 @@
 				D0F41D002CF0D60200689EBC /* SnapKit */,
 				D0F41D032CF0D60D00689EBC /* Then */,
 				D0F41D062CF0D62400689EBC /* Alamofire */,
+				D0F41D342CF10D8F00689EBC /* Moya */,
 			);
 			productName = "35th-SOPKATHON-Team3-iOS";
 			productReference = D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */;
@@ -230,6 +259,7 @@
 				D0F41CFF2CF0D60200689EBC /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D0F41D022CF0D60D00689EBC /* XCRemoteSwiftPackageReference "Then" */,
 				D0F41D052CF0D62400689EBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D0F41CBD2CF0CE5400689EBC /* Products */;
@@ -247,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */,
+				D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */,
 				D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +296,11 @@
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
 				D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */,
+				D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */,
+				D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */,
+				D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */,
+				D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */,
+				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +377,7 @@
 		};
 		D0F41CD22CF0CE5600689EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F41D122CF108FB00689EBC /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -404,6 +441,7 @@
 		};
 		D0F41CD32CF0CE5600689EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F41D122CF108FB00689EBC /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -514,6 +552,14 @@
 				minimumVersion = 5.10.1;
 			};
 		};
+		D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -536,6 +582,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D0F41D052CF0D62400689EBC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		D0F41D342CF10D8F00689EBC /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
