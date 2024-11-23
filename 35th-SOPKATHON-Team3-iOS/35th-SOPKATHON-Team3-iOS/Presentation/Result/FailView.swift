@@ -28,6 +28,24 @@ final class FailView: UIView {
         $0.backgroundColor = .gray10
     }
     
+    private let failLabel = UILabel().then {
+        $0.text = "테스트 실패"
+        $0.textColor = .gray100
+        $0.font = .head(.h4Bold)
+    }
+    
+    private let failMidLabel = UILabel().then {
+        $0.text = "이제는 술잔을 내려놓고"
+        $0.textColor = .gray100
+        $0.font = .head(.h4Bold)
+    }
+    
+    private let failEndLabel = UILabel().then {
+        $0.text = "핑계를 대야 할 때!"
+        $0.textColor = .gray100
+        $0.font = .head(.h4Bold)
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()
@@ -41,7 +59,10 @@ final class FailView: UIView {
     private func setUI() {
         self.addSubviews(
             excuseButton,
-            keepGoingButton
+            keepGoingButton,
+            failLabel,
+            failMidLabel,
+            failEndLabel
         )
     }
     
