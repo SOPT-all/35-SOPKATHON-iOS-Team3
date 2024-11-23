@@ -40,8 +40,11 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <PathRunnable
+         runnableDebuggingMode = "0"
+         FilePath = "/Users/johyerin/Library/Developer/Xcode/DerivedData/35th-SOPKATHON-Team3-iOS-gcxwstmzlrijwefckfwbngnntfxb/Build/Products/Debug-iphonesimulator/35th-SOPKATHON-Team3-iOS.app">
+      </PathRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D0F41CBB2CF0CE5400689EBC"
@@ -49,7 +52,7 @@
             BlueprintName = "35th-SOPKATHON-Team3-iOS"
             ReferencedContainer = "container:35th-SOPKATHON-Team3-iOS.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
