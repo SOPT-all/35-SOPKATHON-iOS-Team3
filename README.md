@@ -38,7 +38,6 @@
 [Merge] : Pull Develop
 ```
 
-
 ## 🍺 Library
 ---
 
@@ -48,6 +47,27 @@
 | Moya | [https://github.com/Moya/Moya.git][PlOd] |
 | SnapKit | [https://github.com/SnapKit/SnapKit.git][PlDb] |
 | Then | [https://github.com/devxoul/Then.git][PlGh] |
+
+# 🍺 Foldering
+```
+📁 Project
+├── 📁 Application
+│   ├── AppDelegate
+│   ├── SceneDelegate
+├── 📁 Global
+│   ├── 🗂️ Extensions
+│   ├── 🗂️ Literals
+│   ├── 🗂️ Resources
+│   ├── 🗂️ Supporting Files
+├── 📁 Network/Base
+├── 📁 Presentation
+│   ├── 🗂️ Splash
+│   ├── 🗂️ Onboarding
+│   ├── 🗂️ Main
+│   ├── 🗂️ Quiz
+│   ├── 🗂️ Result
+
+```
 
 # 🤪 Before..
 ![IMG_2542](https://github.com/user-attachments/assets/5c8b7c33-bcc7-40ce-a889-8a837a23cbc2)
