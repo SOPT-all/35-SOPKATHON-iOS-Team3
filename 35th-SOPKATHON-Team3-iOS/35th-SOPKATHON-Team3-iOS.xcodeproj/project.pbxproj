@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157F77B42CF238620024F1C6 /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F77B32CF238620024F1C6 /* WarningViewController.swift */; };
 		D0C5806C2CF1DEAC005FF1C7 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C5806B2CF1DEAC005FF1C7 /* Pretendard-Thin.otf */; };
 		D0C5806D2CF1DEAC005FF1C7 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580682CF1DEAC005FF1C7 /* Pretendard-Medium.otf */; };
 		D0C5806E2CF1DEAC005FF1C7 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157F77B32CF238620024F1C6 /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
 		D0C580632CF1DEAC005FF1C7 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		D0C580642CF1DEAC005FF1C7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		D0C580652CF1DEAC005FF1C7 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */,
+				157F77B32CF238620024F1C6 /* WarningViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */,
 				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
+				157F77B42CF238620024F1C6 /* WarningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
