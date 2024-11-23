@@ -186,6 +186,7 @@ class MainViewController: UIViewController {
             // present
             print("present")
         } else if drinkCups > capacityCups || drinkCups % 8 == capacityCups {
+            drinkCupsLabel.textColor = .red
             // present
             print("present")
         }
