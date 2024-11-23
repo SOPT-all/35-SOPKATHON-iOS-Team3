@@ -69,8 +69,8 @@ final class SuccessView: UIView {
     
 }
 
-#Preview
-{
-    let view = SuccessView()
-    view
-}
+//#Preview
+//{
+//    let view = SuccessView()
+//    view
+//}
