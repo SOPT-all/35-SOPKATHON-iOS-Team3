@@ -1,6 +1,17 @@
 # 35-SOPKATHON-iOS-Team3
-35기 AND SOPT 솝커톤 iOS 3팀 레포지토리 입니다!!!!!!!!!!!!!!1
+35기 AND SOPT 솝커톤 iOS 3팀 레포지토리 입니다!!
+
 # Team iOS 3
+
+<div align=center>
+  
+<img width="200px" src="https://github.com/Johyerin.png"/> | <img width="200px" src="https://github.com/0gonge.png"/> | <img width="200px" src="https://github.com/ChoiAnYong.png"/> | <img width="200px" src = "https://github.com/yurim830.png"/> | 
+|:-----:|:-----:|:-----:|:-----:|
+|[조혜린](https://github.com/Johyerin)|[송여경](https://github.com/0gonge)|[최안용](https://github.com/ChoiAnYong)|[김유림](https://github.com/yurim830)
+| `스플래쉬, 주량입력` | `성공화면, 실패화면` | `퀴즈 페이지` |  `메인 페이지` |
+
+</div>
+<br>
 
 ## 아삼아삼 파이팅 🤪
 
