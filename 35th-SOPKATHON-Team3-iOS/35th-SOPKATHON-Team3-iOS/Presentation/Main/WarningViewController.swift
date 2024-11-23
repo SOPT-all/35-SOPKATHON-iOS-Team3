@@ -21,7 +21,7 @@ class WarningViewController: UIViewController {
     
     private let contentLabel = UILabel().then {
         $0.text = "벌써 주량을 넘어버렸어요!"
-        $0.font = .head(.h5Semibold)
+        $0.font = .head(.h5SemiBold)
         $0.textColor = .gray100
     }
     

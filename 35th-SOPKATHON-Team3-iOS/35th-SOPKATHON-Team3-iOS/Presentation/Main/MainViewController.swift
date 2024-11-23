@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
     }
     
     private let guideLabel = UILabel().then {
-        $0.font = .head(.h4Semibold)
+        $0.font = .head(.h4Bold)
         $0.numberOfLines = 2
         $0.text = """
 한 잔, 두 잔...
@@ -47,38 +47,38 @@ class MainViewController: UIViewController {
     }
     
     private lazy var drinkCupsLabel = UILabel().then {
-        $0.font = .head(.h3Semibold)
+        $0.font = .head(.h3SemiBold)
         $0.text = String(drinkCups)
         $0.textColor = .gray100
     }
     
     private let cupLabel1 = UILabel().then {
-        $0.font = .head(.h6Semibold)
+        $0.font = .head(.h6SemiBold)
         $0.text = "잔"
         $0.textColor = .gray100
     }
     
     private let slashLabel = UILabel().then {
-        $0.font = .head(.h3Semibold)
+        $0.font = .head(.h3SemiBold)
         $0.text = "/"
         $0.textColor = .gray30
     }
     private lazy var capacityCupsLabel = UILabel().then {
-        $0.font = .head(.h3Semibold)
+        $0.font = .head(.h3SemiBold)
         $0.text = String(capacityCups)
         $0.textColor = .gray30
         
     }
     
     private let cupLabel2 = UILabel().then {
-        $0.font = .head(.h6Semibold)
+        $0.font = .head(.h6SemiBold)
         $0.text = "잔"
         $0.textColor = .gray30
     }
     
     private let tapButton = UIButton().then {
         var config = UIButton.Configuration.filled()
-        let attributes: [NSAttributedString.Key: Any] = [.font : UIFont.head(.h1Semibold)]
+        let attributes: [NSAttributedString.Key: Any] = [.font : UIFont.head(.h1SemiBold)]
         let attributedTitle = AttributedString(NSAttributedString(string: "TAP", attributes: attributes))
         
         config.attributedTitle = attributedTitle
