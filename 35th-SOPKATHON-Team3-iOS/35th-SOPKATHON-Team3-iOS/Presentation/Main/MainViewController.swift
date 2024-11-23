@@ -13,8 +13,14 @@ import Then
 class MainViewController: UIViewController {
     
     // MARK: - Properties
+    var addedBottles: Int = 0
+    var drinkCups: Int = 0 {
+        didSet {
+            drinkCupsLabel.text = String(drinkCups)
+        }
+    }
     
-    var drunkCups: Int = 0
+    var capacityCups: Int = 8
     
     private let guideLabel = UILabel().then {
         $0.text = "한 잔 마실 때마다 눌러주세요!"
@@ -27,13 +33,13 @@ class MainViewController: UIViewController {
         $0.alignment = .center
     }
     
-    private let drankAmountLabel = UILabel().then {
+    private lazy var drinkCupsLabel = UILabel().then {
         $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 30)
-        $0.text = "0"
+        $0.text = String(drinkCups)
         $0.textColor = .gray100
     }
     
-    private let drankCupLabel = UILabel().then {
+    private let cupLabel1 = UILabel().then {
         $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
         $0.text = "잔"
         $0.textColor = .gray100
@@ -44,14 +50,14 @@ class MainViewController: UIViewController {
         $0.text = "/"
         $0.textColor = .gray100
     }
-    private let capacityAmountLabel = UILabel().then {
+    private lazy var capacityCupsLabel = UILabel().then {
         $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 30)
-        $0.text = "16"
+        $0.text = String(capacityCups)
         $0.textColor = .gray100
         
     }
     
-    private let capacityCupLabel = UILabel().then {
+    private let cupLabel2 = UILabel().then {
         $0.font = .pretendardFont(weight: .pretendardSemiBold, ofSize: 16)
         $0.text = "잔"
         $0.textColor = .gray100
@@ -85,6 +91,7 @@ class MainViewController: UIViewController {
         setUI()
         setHierarchy()
         setConstraints()
+        setAddTarget()
     }
     
     private func setUI() {
@@ -95,14 +102,17 @@ class MainViewController: UIViewController {
         view.addSubviews(
             guideLabel,
             drinkingLabelStackView,
-            tapButton)
+            tapButton,
+            scrollView)
         
         drinkingLabelStackView.addArrangedSubviews(
-            drankAmountLabel,
-            drankCupLabel,
+            drinkCupsLabel,
+            cupLabel1,
             slashLabel,
-            capacityAmountLabel,
-            capacityCupLabel)
+            capacityCupsLabel,
+            cupLabel2)
+        
+        scrollView.addSubview(bottleStackView)
     }
     
     private func setConstraints() {
@@ -121,9 +131,63 @@ class MainViewController: UIViewController {
             $0.centerX.equalToSuperview()
             $0.size.equalTo(164)
         }
+        
+        scrollView.snp.makeConstraints {
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-20)
+            $0.horizontalEdges.equalToSuperview().inset(28)
+            $0.height.equalTo(110)
+        }
+        
+        bottleStackView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
     
-    private func addBottle() {
-        bottleStackView.addArrangedSubview(UIImageView())
+    private func setAddTarget() {
+        tapButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+    }
+    
+    private func addHalfBottle() {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = .bottleHalf
+        
+        bottleStackView.addArrangedSubview(imageView)
+        
+        imageView.snp.makeConstraints {
+            $0.width.equalTo(44)
+            $0.height.equalTo(110)
+        }
+        
+    }
+    
+    private func switchBottleImage() {
+        guard let imageView = bottleStackView.arrangedSubviews.last as? UIImageView else { return }
+        imageView.image = .bottleFull
+    }
+    
+    private func updateBottle() {
+        let bottles = drinkCups / 8
+        let cups = drinkCups % 8
+        
+        if bottles > addedBottles {
+            switchBottleImage()
+            addedBottles += 1
+        } else if cups == 4 {
+            addHalfBottle()
+        }
+    }
+    
+    @objc func didTapButton() {
+        drinkCups += 1
+        updateBottle()
+        
+        if drinkCups == capacityCups {
+            // present
+            print("present")
+        } else if drinkCups > capacityCups || drinkCups % 8 == capacityCups {
+            // present
+            print("present")
+        }
     }
 }
