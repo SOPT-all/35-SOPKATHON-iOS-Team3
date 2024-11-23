@@ -22,6 +22,7 @@
 		D0F41D042CF0D60D00689EBC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D032CF0D60D00689EBC /* Then */; };
 		D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D062CF0D62400689EBC /* Alamofire */; };
 		D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0F41D122CF108FB00689EBC /* Config.xcconfig */; };
+		D0F41D352CF10D8F00689EBC /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D342CF10D8F00689EBC /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 				D0F41CFE2CF0D5F100689EBC /* Kingfisher in Frameworks */,
 				D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */,
 				D0F41D042CF0D60D00689EBC /* Then in Frameworks */,
+				D0F41D352CF10D8F00689EBC /* Moya in Frameworks */,
 				D0F41D012CF0D60200689EBC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +201,7 @@
 				D0F41D002CF0D60200689EBC /* SnapKit */,
 				D0F41D032CF0D60D00689EBC /* Then */,
 				D0F41D062CF0D62400689EBC /* Alamofire */,
+				D0F41D342CF10D8F00689EBC /* Moya */,
 			);
 			productName = "35th-SOPKATHON-Team3-iOS";
 			productReference = D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */;
@@ -233,6 +236,7 @@
 				D0F41CFF2CF0D60200689EBC /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D0F41D022CF0D60D00689EBC /* XCRemoteSwiftPackageReference "Then" */,
 				D0F41D052CF0D62400689EBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D0F41CBD2CF0CE5400689EBC /* Products */;
@@ -520,6 +524,14 @@
 				minimumVersion = 5.10.1;
 			};
 		};
+		D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -542,6 +554,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D0F41D052CF0D62400689EBC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		D0F41D342CF10D8F00689EBC /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0F41D332CF10D8F00689EBC /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
