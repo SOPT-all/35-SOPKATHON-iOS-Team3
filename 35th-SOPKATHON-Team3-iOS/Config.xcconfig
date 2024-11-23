@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  35th-SOPKATHON-Team3-iOS
+//
+//  Created by 조혜린 on 11/23/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:/$()/orbsecurity.org/api
