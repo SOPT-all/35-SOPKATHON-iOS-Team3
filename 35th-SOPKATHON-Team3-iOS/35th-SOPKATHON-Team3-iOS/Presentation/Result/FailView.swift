@@ -81,6 +81,24 @@ final class FailView: UIView {
             $0.height.equalTo(58)
             $0.width.equalTo(314)
         }
+        
+        failLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.leading.equalToSuperview().offset(126.5)
+        }
+        
+        failMidLabel.snp.makeConstraints {
+            $0.top.equalTo(failLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+            $0.leading.equalToSuperview().offset(79.5)
+        }
+        
+        failEndLabel.snp.makeConstraints {
+            $0.top.equalTo(failMidLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+            $0.leading.equalToSuperview().offset(104)
+        }
+        
     }
     
 }

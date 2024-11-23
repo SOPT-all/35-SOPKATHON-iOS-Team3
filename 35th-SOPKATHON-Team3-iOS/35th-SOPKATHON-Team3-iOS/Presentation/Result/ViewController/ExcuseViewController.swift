@@ -13,10 +13,10 @@ import Then
 class ExcuseViewController: UIViewController {
     
     private let keepGoingButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h6SemiBold)
-        $0.setTitle("그냥 마시기", for: .normal)
-        $0.setTitleColor(.primary200, for: .normal)
-        $0.layer.cornerRadius = 29
+        $0.titleLabel?.font = .body(.b4SemiBold)
+        $0.setTitle("지금까지 마신 술 다시보기", for: .normal)
+        $0.setTitleColor(.gray0, for: .normal)
+        $0.layer.cornerRadius = 10
         $0.backgroundColor = .primary500
     }
     
