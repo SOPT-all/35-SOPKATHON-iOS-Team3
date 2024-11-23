@@ -21,6 +21,7 @@
 		D0F41D012CF0D60200689EBC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D002CF0D60200689EBC /* SnapKit */; };
 		D0F41D042CF0D60D00689EBC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D032CF0D60D00689EBC /* Then */; };
 		D0F41D072CF0D62400689EBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D0F41D062CF0D62400689EBC /* Alamofire */; };
+		D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0F41D122CF108FB00689EBC /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D0F41CF12CF0D42200689EBC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		D0F41CF32CF0D43800689EBC /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		D0F41CF42CF0D43800689EBC /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		D0F41D122CF108FB00689EBC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D0F41CB32CF0CE5400689EBC = {
 			isa = PBXGroup;
 			children = (
+				D0F41D122CF108FB00689EBC /* Config.xcconfig */,
 				D0F41CDB2CF0CEE300689EBC /* 35th-SOPKATHON-Team3-iOS */,
 				D0F41CBD2CF0CE5400689EBC /* Products */,
 			);
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */,
+				D0F41D132CF108FB00689EBC /* Config.xcconfig in Resources */,
 				D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +345,7 @@
 		};
 		D0F41CD22CF0CE5600689EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F41D122CF108FB00689EBC /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -404,6 +409,7 @@
 		};
 		D0F41CD32CF0CE5600689EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F41D122CF108FB00689EBC /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
