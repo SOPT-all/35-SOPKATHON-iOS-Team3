@@ -17,6 +17,11 @@
 		D0C580732CF1DEAC005FF1C7 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C580662CF1DEAC005FF1C7 /* Pretendard-ExtraLight.otf */; };
 		D0C580742CF1DEAC005FF1C7 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0C5806A2CF1DEAC005FF1C7 /* Pretendard-SemiBold.otf */; };
 		D0C5807B2CF1DF26005FF1C7 /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5807A2CF1DF26005FF1C7 /* FontLiterals.swift */; };
+		D0C580AC2CF20BD7005FF1C7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580AB2CF20BC1005FF1C7 /* SplashViewController.swift */; };
+		D0C580AE2CF20BE1005FF1C7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580AD2CF20BDA005FF1C7 /* OnboardingViewController.swift */; };
+		D0C580B12CF20BFB005FF1C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */; };
+		D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */; };
+		D0C580B52CF20C0B005FF1C7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */; };
 		D0F41CDC2CF0CEE300689EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD52CF0CEE300689EBC /* Assets.xcassets */; };
 		D0F41CDE2CF0CEE300689EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F41CD82CF0CEE300689EBC /* LaunchScreen.storyboard */; };
 		D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */; };
@@ -51,6 +56,11 @@
 		D0C5806A2CF1DEAC005FF1C7 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		D0C5806B2CF1DEAC005FF1C7 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		D0C5807A2CF1DF26005FF1C7 /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		D0C580AB2CF20BC1005FF1C7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D0C580AD2CF20BDA005FF1C7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D0F41CBC2CF0CE5400689EBC /* 35th-SOPKATHON-Team3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "35th-SOPKATHON-Team3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F41CD42CF0CEE300689EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F41CD52CF0CEE300689EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +97,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0C580A52CF20B75005FF1C7 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				D0C580B22CF20BFE005FF1C7 /* QuizViewController.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		D0C580A62CF20B7E005FF1C7 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				D0C580B42CF20C06005FF1C7 /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		D0C580A72CF20BA2005FF1C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0C580B02CF20BEC005FF1C7 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D0C580A82CF20BA7005FF1C7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D0C580AD2CF20BDA005FF1C7 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D0C580A92CF20BB3005FF1C7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D0C580AB2CF20BC1005FF1C7 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		D0F41CB32CF0CE5400689EBC = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +198,11 @@
 		D0F41CE52CF0D0E000689EBC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D0C580A92CF20BB3005FF1C7 /* Splash */,
+				D0C580A82CF20BA7005FF1C7 /* Onboarding */,
+				D0C580A72CF20BA2005FF1C7 /* Main */,
+				D0C580A52CF20B75005FF1C7 /* Quiz */,
+				D0C580A62CF20B7E005FF1C7 /* Result */,
 				D0F41CDA2CF0CEE300689EBC /* ViewController.swift */,
 			);
 			path = Presentation;
@@ -329,17 +384,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C5807B2CF1DF26005FF1C7 /* FontLiterals.swift in Sources */,
+				D0C580B52CF20C0B005FF1C7 /* ResultViewController.swift in Sources */,
 				D0F41CDF2CF0CEE300689EBC /* AppDelegate.swift in Sources */,
 				D0F41CF22CF0D42200689EBC /* UIStackView+.swift in Sources */,
 				D0F41CEE2CF0D3DE00689EBC /* NSObject+.swift in Sources */,
 				D0F41CE02CF0CEE300689EBC /* SceneDelegate.swift in Sources */,
 				D0F41CE12CF0CEE300689EBC /* ViewController.swift in Sources */,
 				D0F41CF02CF0D3FF00689EBC /* UIView+.swift in Sources */,
+				D0C580B12CF20BFB005FF1C7 /* MainViewController.swift in Sources */,
 				D0F41CF52CF0D43800689EBC /* UITextField+.swift in Sources */,
 				D0F41D1C2CF10BB300689EBC /* MoyaPlugin.swift in Sources */,
+				D0C580AC2CF20BD7005FF1C7 /* SplashViewController.swift in Sources */,
 				D0F41D1D2CF10BB300689EBC /* NetworkResult.swift in Sources */,
+				D0C580AE2CF20BE1005FF1C7 /* OnboardingViewController.swift in Sources */,
 				D0F41D1E2CF10BB300689EBC /* NetworkService.swift in Sources */,
 				D0F41D1F2CF10BB300689EBC /* BaseService.swift in Sources */,
+				D0C580B32CF20C03005FF1C7 /* QuizViewController.swift in Sources */,
 				D0F41D202CF10BB300689EBC /* BaseTargetType.swift in Sources */,
 				D0F41CF62CF0D43800689EBC /* UILabel+.swift in Sources */,
 			);
