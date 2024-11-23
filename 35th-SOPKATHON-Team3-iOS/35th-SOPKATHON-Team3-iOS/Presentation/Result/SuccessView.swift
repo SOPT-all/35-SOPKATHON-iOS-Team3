@@ -13,7 +13,7 @@ import Then
 final class SuccessView: UIView {
     
     private let excuseButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h1Semibold)
+        $0.titleLabel?.font = .head(.h3SemiBold)
         $0.setTitle("귀가 핑계대기", for: .normal)
         $0.setTitleColor(.primary500, for: .normal)
         $0.layer.cornerRadius = 29
@@ -21,7 +21,7 @@ final class SuccessView: UIView {
     }
     
     private let keepGoingButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h4Semibold)
+        $0.titleLabel?.font = .head(.h3SemiBold)
         $0.setTitle("그냥 마시기", for: .normal)
         $0.setTitleColor(.gray100, for: .normal)
         $0.layer.cornerRadius = 29

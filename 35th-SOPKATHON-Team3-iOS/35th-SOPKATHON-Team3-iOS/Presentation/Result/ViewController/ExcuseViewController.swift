@@ -13,7 +13,7 @@ import Then
 class ExcuseViewController: UIViewController {
     
     private let keepGoingButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h4Semibold)
+        $0.titleLabel?.font = .head(.h3SemiBold)
         $0.setTitle("그냥 마시기", for: .normal)
         $0.setTitleColor(.primary200, for: .normal)
         $0.layer.cornerRadius = 29
@@ -21,7 +21,7 @@ class ExcuseViewController: UIViewController {
     }
     
     private let anotherExcuseButton = UIButton().then {
-        $0.titleLabel?.font = .head(.h6Semibold)
+        $0.titleLabel?.font = .head(.h5SemiBold)
         $0.setTitle("다른 핑계 보기", for: .normal)
         $0.setTitleColor(.primary500, for: .normal)
     }
