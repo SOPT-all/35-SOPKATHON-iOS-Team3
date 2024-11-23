@@ -13,6 +13,7 @@ import Then
 class MainViewController: UIViewController {
     
     // MARK: - Properties
+    
     var addedBottles: Int = 0
     var drinkCups: Int = 0 {
         didSet {
@@ -143,7 +144,7 @@ class MainViewController: UIViewController {
     }
     
     private func setAddTarget() {
-        tapButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        tapButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }
     
     private func addHalfBottle() {
@@ -177,17 +178,22 @@ class MainViewController: UIViewController {
         }
     }
     
-    @objc func didTapButton() {
+    @objc func tappedButton() {
+        let warningVC = WarningViewController()
+        let capacityRest = capacityCups % 8
+        
+        warningVC.modalPresentationStyle = .overFullScreen
+        warningVC.modalTransitionStyle = .flipHorizontal
+        
         drinkCups += 1
         updateBottle()
         
         if drinkCups == capacityCups {
-            // present
-            print("present")
-        } else if drinkCups > capacityCups || drinkCups % 8 == capacityCups {
+            self.present(warningVC, animated: true)
+            
+        } else if drinkCups > capacityCups && drinkCups % 8 == capacityRest {
             drinkCupsLabel.textColor = .red
-            // present
-            print("present")
+            self.present(warningVC, animated: true)
         }
     }
 }
